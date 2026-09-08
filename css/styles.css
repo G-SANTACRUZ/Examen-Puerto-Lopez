@@ -1,0 +1,432 @@
+/* ==============================
+   CONFIGURACIÓN GENERAL
+   ============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7f6;
+    color: #263238;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   ENCABEZADO Y MENÚ
+   ============================== */
+
+header {
+    background-color: #00695c;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    font-size: 26px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #004d40;
+    outline: none;
+}
+
+
+/* ==============================
+   SECCIÓN HERO
+   ============================== */
+
+.hero {
+    min-height: 500px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("../images/portada.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-contenido {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+
+/* ==============================
+   BOTONES
+   ============================== */
+
+.boton {
+    display: inline-block;
+    background-color: #ffb300;
+    color: #263238;
+    text-decoration: none;
+    padding: 13px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover,
+.boton:focus {
+    background-color: #ffa000;
+    transform: translateY(-2px);
+    outline: 3px solid rgba(255, 179, 0, 0.35);
+}
+
+
+/* ==============================
+   SECCIONES GENERALES Y TÍTULOS
+   ============================== */
+
+.introduccion,
+.destacados,
+.atractivos,
+.llamada,
+.sobre-nosotros,
+.nuestros-valores {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 25px;
+    text-align: center;
+}
+
+.introduccion h2,
+.destacados h2,
+.atractivos h2,
+.llamada h2,
+.sobre-nosotros h2,
+.nuestros-valores h2,
+.nosotros h2,
+.cta h2 {
+    color: #00695c;
+    font-size: 34px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.introduccion p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+}
+
+
+/* ==============================
+   TARJETAS DE ATRACTIVOS
+   ============================== */
+
+.tarjetas,
+.atractivos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.tarjeta,
+.atractivo-card {
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #dce5e3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    text-align: center;
+}
+
+.tarjeta:hover,
+.atractivo-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta img,
+.atractivo-img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.tarjeta h3,
+.atractivo-card h3 {
+    color: #00796b;
+    font-size: 22px;
+    margin: 15px;
+}
+
+.tarjeta p,
+.atractivo-card p {
+    color: #455a64;
+    font-size: 0.95rem;
+    margin: 0 15px 20px 15px;
+    line-height: 1.5;
+}
+
+
+/* ==============================
+   SECCIÓN NOSOTROS (MISIÓN, VISIÓN Y VALORES)
+   ============================== */
+
+.mision-vision-container, 
+.nosotros-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.valores-container, 
+.valores-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 350px));
+    gap: 25px;
+    justify-content: center;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.valor-card, 
+.mision-card, 
+.vision-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #dce5e3;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    width: 100%;
+}
+
+
+/* ==============================
+   LLAMADA A LA ACCIÓN
+   ============================== */
+
+.llamada {
+    background-color: #e0f2f1;
+    max-width: 1100px;
+    margin-bottom: 60px;
+    border-radius: 15px;
+}
+
+.llamada p {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+
+/* ==============================
+   FORMULARIO DE CONTACTO
+   ============================== */
+
+.formulario-seccion {
+    max-width: 800px;
+    margin: 0 auto 70px;
+    padding: 0 25px;
+}
+
+.formulario {
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid #dce5e3;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #37474f;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #b0bec5;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #fafafa;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: #00796b;
+    outline: 3px solid rgba(0, 121, 107, 0.15);
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.formulario .boton {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+/* ==============================
+   PIE DE PÁGINA
+   ============================== */
+
+footer {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* ==============================
+   DISEÑO RESPONSIVE
+   ============================== */
+
+/* TABLET (max-width: 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .valores-container, 
+    .valores-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+    }
+}
+
+/* CELULAR (max-width: 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 15px 10px;
+    }
+
+    .logo h1 {
+        font-size: 22px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    .hero {
+        min-height: 420px;
+        padding: 30px 15px;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .introduccion,
+    .destacados,
+    .atractivos,
+    .llamada {
+        padding: 40px 18px;
+    }
+
+    .tarjeta,
+    .atractivo-card {
+        max-width: 100%;
+    }
+
+    .boton {
+        padding: 12px 18px;
+    }
+}
