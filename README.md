@@ -15,4 +15,4 @@ Plataforma web promocional e informativa diseñada para destacar los principales
 ![Vista previa del sitio](images/sitio.jpg)
 
 **URL del sitio publicado:**
-https://gabriel-santacruz.github.io/examen-final-turismo/
+https://g-santacruz.github.io/Examen-Puerto-Lopez/
