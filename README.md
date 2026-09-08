@@ -12,7 +12,7 @@ Plataforma web promocional e informativa diseñada para destacar los principales
 * Git & GitHub (Control de versiones)
 * GitHub Pages (Despliegue y hosting público)
 **Captura del sitio:**
-![Vista previa del sitio](images/despliegue .png)
+![Vista previa del sitio](images/sitio.jpg)
 
 **URL del sitio publicado:**
 https://gabriel-santacruz.github.io/examen-final-turismo/
